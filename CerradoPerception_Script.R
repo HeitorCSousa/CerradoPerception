@@ -22,7 +22,6 @@ text_spec <- read.csv("Open_Answers_Specs_En.csv", h=T)
 text_spec$Type <- rep("Specialist", nrow(text_spec))
 
 text_rural <- read.csv("Open_Answers_Rural_En.csv", h=T)
-text_rural$MIF_Sugg <- rep(NA, nrow(text_rural))
 text_rural$Type <- rep("RuralProp", nrow(text_rural))
 
 text_rural_spec <- rbind(text_rural, text_spec)
